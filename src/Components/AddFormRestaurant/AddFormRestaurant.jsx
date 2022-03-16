@@ -79,8 +79,9 @@ function AddFormRestaurant(props) {
       display:'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
-      paddingLeft: 12,
-      paddingRight: 12
+      paddingLeft: 9,
+      paddingRight: 9,
+      marginTop: 9
       }}>
     
         <Box component="h3" sx = {{marginBottom: 1, marginTop: 0}}>

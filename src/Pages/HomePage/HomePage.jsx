@@ -16,7 +16,7 @@ function HomePage({children}) {
 
     const getRestaurantOfTheWeek = () => {
         axios.get(`${process.env.REACT_APP_API_URL}/api/restaurant-of-the-week`)
-        .then((restaurant) => {setRestaurantOfTheWeek(restaurant.data); console.log(restaurant)})
+        .then((restaurant) => {setRestaurantOfTheWeek(restaurant.data); console.log(restaurant.data)})
         .catch((err) => console.log(err))
     }
 
@@ -31,8 +31,11 @@ function HomePage({children}) {
         <Box sx = {{
             // display: 'flex', 
             // flexDirection: 'column', 
-            paddingLeft: 12,
-            paddingRight: 12
+            paddingLeft: 9,
+            paddingRight: 9,
+            paddingTop: 2,
+            height: '100vh',
+            marginTop: 8
         }}>
         {!loggedIn &&
                 <Box sx = {{
@@ -55,13 +58,13 @@ function HomePage({children}) {
                 <Box component="h3" sx = {{textAlign: 'left', marginBottom: '0', marginTop: '0'}}>Restaurant of the week</Box>
                 {(restaurantOfTheWeek && loggedIn && user.isAdmin) &&
                 <Box>
-                    <Button size ="small" variant="outlined" component={Link} to={`/edit/${restaurantOfTheWeek.data._id}`}>Edit</Button>
+                    <Button size ="small" variant="outlined" component={Link} to={`/edit/${restaurantOfTheWeek._id}`}>Edit</Button>
                 </Box>
                 }
             </Box>
 
             <Box sx = {{marginTop: 0, paddingTop: 0}}>
-               {restaurantOfTheWeek && <RestaurantCard restaurant={restaurantOfTheWeek.data}></RestaurantCard>}
+               {restaurantOfTheWeek && <RestaurantCard restaurant={restaurantOfTheWeek}></RestaurantCard>}
             </Box>
         </Box>
     </>

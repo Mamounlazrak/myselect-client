@@ -18,8 +18,11 @@ function ProfilePage({children}) {
     display:'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    paddingLeft: 12,
-    paddingRight: 12
+    paddingLeft: 9,
+    paddingRight: 9,
+    paddingTop: 2,
+    height: '100vh',
+    marginTop: 8,
     }}>
             <Box component="h3" sx = {{marginBottom: 2, marginTop: 0}}>
                 Personal Information

@@ -36,10 +36,13 @@ function MyRestaurantsListPage({children}) {
   return (
     <>
     {children}
-    
+
     <Box sx = {{
-      paddingLeft: 12,
-      paddingRight: 12
+      paddingLeft: 9,
+      paddingRight: 9,
+      paddingTop: 2,
+      height: '100vh',
+      marginTop: 8
   }}>
         {/* <Tabss></Tabss> */}
       <Box sx = {{
