@@ -20,7 +20,7 @@ function Navbar() {
       paddingTop: 1,
       // paddingBottom: 1,
       marginBottom: 1,
-      height: '10vh'
+      height: '10vh',
     }}>
 
       <Box component={Link} to="/" sx = {{textDecoration: 'none', color:'black', fontWeight: 'bold'}}>

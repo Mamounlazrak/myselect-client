@@ -16,7 +16,7 @@ function HomePage({children}) {
 
     const getRestaurantOfTheWeek = () => {
         axios.get(`${process.env.REACT_APP_API_URL}/api/restaurant-of-the-week`)
-        .then((restaurant) => {setRestaurantOfTheWeek(restaurant); console.log(restaurant)})
+        .then((restaurant) => {setRestaurantOfTheWeek(restaurant.data); console.log(restaurant)})
         .catch((err) => console.log(err))
     }
 
