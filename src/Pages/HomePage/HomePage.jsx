@@ -34,19 +34,21 @@ function HomePage({children}) {
             paddingLeft: 9,
             paddingRight: 9,
             paddingTop: 2,
-            height: '100vh',
             marginTop: '7vh'
         }}>
         {!loggedIn &&
                 <Box sx = {{
                     display: 'flex', 
                     flexDirection: 'column',
-                    height: '30vh', 
+                    height: '90vh', 
+                    // backgroundImage: `url(${'https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg'})`
                     // paddingTop: '4vh'
                 }}>
-                    <Box component = "h3" sx = {{}}>Find sustainable restaurants and brands in Lisbon</Box>
+                    <Box component = "h3" sx = {{width: '100%', fontSize:40}}>Find the best eco-friendly restaurants in Lisbon</Box>
+                    <Box component = "p" sx = {{fontSize: 20, marginTop: 0, width: "100%"}}>Discover a curated list of organic and eco-friendly restaurants in Lisbon.</Box>
+                    <Box component = "p" sx = {{fontSize: 20, marginTop: 0}}>Pick your favourite places and save them in your personal list.</Box>
                     <Box>
-                        <Button size ="small" variant="contained" component={Link} to="/signup">Get started</Button>
+                        <Button size ="large" variant="contained" component={Link} to="/signup">Get started</Button>
                     </Box>
                 </Box>
         }
