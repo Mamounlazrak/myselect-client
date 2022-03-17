@@ -41,7 +41,6 @@ function MyRestaurantsListPage({children}) {
       paddingLeft: 9,
       paddingRight: 9,
       paddingTop: 2,
-      height: '100vh',
       marginTop: '7vh'
   }}>
         {/* <Tabss></Tabss> */}
