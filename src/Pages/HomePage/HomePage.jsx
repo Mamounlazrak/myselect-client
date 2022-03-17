@@ -57,11 +57,12 @@ function HomePage({children}) {
                 justifyContent:'space-between',
                 alignItems: 'center'
             }}>
+                {(restaurantOfTheWeek && loggedIn && user.isAdmin) && <>
                 <Box component="h3" sx = {{textAlign: 'left', marginBottom: '0', marginTop: '0'}}>Restaurant of the week</Box>
-                {(restaurantOfTheWeek && loggedIn && user.isAdmin) &&
                 <Box>
                     <Button size ="small" variant="outlined" component={Link} to={`/edit/${restaurantOfTheWeek._id}`}>Edit</Button>
                 </Box>
+                </>
                 }
             </Box>
 
