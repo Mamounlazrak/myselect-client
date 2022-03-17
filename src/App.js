@@ -29,7 +29,6 @@ function App() {
         <Route path="/restaurants/:restaurantId" element={<RestaurantDetailsPage> <Navbar /> </RestaurantDetailsPage>} />
         <Route path="/edit/:restaurantId" element={<RestaurantEditPage> <Navbar /> </RestaurantEditPage>} />
         <Route path="/profile" element={<IsPrivate><ProfilePage> <Navbar /> </ProfilePage></IsPrivate>} />
-        {/* <Route path="/restaurantsmui" element={<RestaurantsListPageMui />}></Route> */}
         <Route path="/addrestaurant" element={<RestaurantsCreatePage> <Navbar /> </RestaurantsCreatePage>}/>
       </Routes>
       <NavBarMUI></NavBarMUI>

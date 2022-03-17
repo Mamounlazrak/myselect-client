@@ -76,7 +76,7 @@ function RestaurantDetailsPage({children}) {
     <Box sx={{
         paddingLeft: 9,
         paddingRight: 9,
-        marginTop: '8vh'
+        marginTop: '9vh'
     }}>
         {restaurant && 
         <>

@@ -26,7 +26,10 @@ function RestaurantEditPage({children}) {
     const fetchRestaurant = async() => {
         try {
             let response = await axios.get(`${process.env.REACT_APP_API_URL}/api/restaurants/${restaurantId}`)
-            let {name, location, latitude, longitude, averagePrice, description, imageURL} = response.data
+            let {name, location, averagePrice, description, imageURL} = response.data
+            let latitude = response.data.locationGPS.coordinates[0];
+            let longitude = response.data.locationGPS.coordinates[1];
+            console.log(response.data);
             setName(name)
             setLocation(location)
             setLatitude(latitude);
@@ -40,19 +43,16 @@ function RestaurantEditPage({children}) {
     }
 
     const handleFileUpload = (e) => {
-      // console.log("The file to be uploaded is: ", e.target.files[0]);
    
       const uploadData = new FormData();
    
-      // imageUrl => this name has to be the same as in the model since we pass
-      // req.body to .create() method when creating a new movie in '/api/movies' POST route
+
       uploadData.append("imageUrl", e.target.files[0]);
    
       service
         .uploadImage(uploadData)
         .then(response => {
           console.log("response is: ", response);
-          // response carries "fileUrl" which we can use to update the state
           setImageURL(response.fileUrl);
           console.log(imageURL);
 
@@ -175,16 +175,14 @@ function RestaurantEditPage({children}) {
             </div>
             <div>
     
-            {/* <label htmlFor="imageURL">Picture</label>
-            <input type="file" name="imageURL" onChange={(e) => handleFileUpload(e)} /> */}
+            
             <Box sx = {{
               display: 'flex', 
               flexDirection: 'column',
               alignItems: 'flex-start',
               marginTop: '1ch',
               marginBottom: '1ch'
-              // justifyContent: 'space-between',
-              // width:'42ch'
+
           
             }}>
               <Box>
