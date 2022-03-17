@@ -39,7 +39,7 @@ function RestaurantsListPage({children}) {
         paddingLeft: 9,
         paddingRight: 9,
         paddingTop: 2,
-        height: '100vh',
+        // height: '100vh',
         // backgroundColor:'#f0f2f5',
         marginTop: '7vh'
     }}>
