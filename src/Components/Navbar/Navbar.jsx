@@ -23,7 +23,7 @@ function Navbar() {
       paddingTop: 1,
       paddingBottom: 1,
       // marginBottom: 1,
-      height: '10vh',
+      height: '6vh',
       borderBottom:'0.1px solid grey',
       position: 'fixed', top: 0, left: 0, right: 0, overflow: 'hidden', backgroundColor:'#f0f0f3', zIndex:'100'
 
@@ -43,7 +43,7 @@ function Navbar() {
         </>
       )}
         
-      {(loggedIn && user.isAdmin) && <Box>Admin View</Box> }
+      {(loggedIn && user.isAdmin) && <Box sx = {{fontWeight: 'bold', fontStyle: 'italic'}}>*Admin View</Box> }
     </Box>
   );
 }

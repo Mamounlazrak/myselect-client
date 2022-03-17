@@ -13,6 +13,8 @@ function RestaurantEditPage({children}) {
 
   const [name, setName] = useState('');
   const [location, setLocation] = useState('');
+  const [latitude, setLatitude] = useState('');
+  const [longitude, setLongitude] = useState('');
   const [averagePrice, setAveragePrice] = useState(0);
   const [description, setDescription] = useState('');
   const [imageURL, setImageURL] = useState('');
@@ -24,9 +26,11 @@ function RestaurantEditPage({children}) {
     const fetchRestaurant = async() => {
         try {
             let response = await axios.get(`${process.env.REACT_APP_API_URL}/api/restaurants/${restaurantId}`)
-            let {name, location, averagePrice, description, imageURL} = response.data
+            let {name, location, latitude, longitude, averagePrice, description, imageURL} = response.data
             setName(name)
             setLocation(location)
+            setLatitude(latitude);
+            setLongitude(longitude);
             setAveragePrice(averagePrice)
             setDescription(description)
             setImageURL(imageURL)
@@ -64,7 +68,7 @@ function RestaurantEditPage({children}) {
     const handleSubmit = (e) => {
       e.preventDefault();
 
-      const body = { name, location, averagePrice, description, imageURL };
+      const body = { name, location, latitude, longitude, averagePrice, description, imageURL };
   
       axios
         .put(`${process.env.REACT_APP_API_URL}/api/restaurants/${restaurantId}`, body)
@@ -72,6 +76,8 @@ function RestaurantEditPage({children}) {
           console.log('RESPONSE',response);
           setName('');
           setLocation('');
+          setLatitude('');
+          setLongitude('');
           setAveragePrice(0);
           setDescription('');
           setImageURL('');
@@ -93,7 +99,7 @@ function RestaurantEditPage({children}) {
       alignItems: 'flex-start',
       paddingLeft: 9,
       paddingRight: 9,
-      marginTop: 9
+      marginTop: '9vh'
       }}>
     
         <Box component="h3" sx = {{marginBottom: 1, marginTop: 0}}>
@@ -103,7 +109,7 @@ function RestaurantEditPage({children}) {
             component="form"
             onSubmit={handleSubmit}
             sx={{
-                '& .MuiTextField-root': { maringTop: 2, marginBottom: 2, width: '35ch' }
+                '& .MuiTextField-root': { maringTop: 2, marginBottom: 2, width: '70vw' }
 
             }}
             noValidate
@@ -136,6 +142,27 @@ function RestaurantEditPage({children}) {
             onChange={(e) => setLocation(e.target.value)}
             />
             </div>
+
+            <div>
+            <TextField
+            label="Latitude"
+            type="text"
+            name='latitude'
+            value={latitude}
+            onChange={(e) => setLatitude(e.target.value)}
+            />  
+            </div>
+            <div>
+            <TextField
+            label="Longitude"
+            type="text"
+            name='longitide'
+            value={longitude}
+            onChange={(e) => setLongitude(e.target.value)}
+            />
+            </div>
+
+
             <div>
             <TextField
             label="Description"

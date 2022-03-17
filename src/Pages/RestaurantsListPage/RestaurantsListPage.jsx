@@ -41,7 +41,7 @@ function RestaurantsListPage({children}) {
         paddingTop: 2,
         height: '100vh',
         // backgroundColor:'#f0f2f5',
-        marginTop: 8
+        marginTop: '7vh'
     }}>
           {/* <Tabss></Tabss> */}
         <Box sx = {{
@@ -53,7 +53,7 @@ function RestaurantsListPage({children}) {
 
           <Box component="h3" sx = {{textAlign: 'left', marginBottom: '0', marginTop: '0'}}>Restaurants in Lisbon</Box>
           {(loggedIn && user.isAdmin) && <Box>
-            <Button size ="small" variant="outlined" component={Link} to="/addrestaurant">Add restaurant</Button>
+            <Button size ="small" variant="outlined" component={Link} to="/addrestaurant">Add</Button>
           </Box>
           }
 

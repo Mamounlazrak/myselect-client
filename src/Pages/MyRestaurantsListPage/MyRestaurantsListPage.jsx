@@ -42,7 +42,7 @@ function MyRestaurantsListPage({children}) {
       paddingRight: 9,
       paddingTop: 2,
       height: '100vh',
-      marginTop: 8
+      marginTop: '7vh'
   }}>
         {/* <Tabss></Tabss> */}
       <Box sx = {{

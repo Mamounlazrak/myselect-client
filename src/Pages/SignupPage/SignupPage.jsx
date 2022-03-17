@@ -61,7 +61,7 @@ function SignupPage() {
             component="form"
             onSubmit={handleSubmit}
             sx={{
-                '& .MuiTextField-root': { maringTop: 2, marginBottom: 2, width: '35ch' },
+                '& .MuiTextField-root': { maringTop: 2, marginBottom: 2, width: '60vw' },
                 marginTop: 2, 
                 
 
@@ -94,15 +94,15 @@ function SignupPage() {
             justifyContent: 'flex-start',
             
           }}>
-            <Button type='submit' variant='contained' sx = {{width:'43.5ch'}}>Sign up</Button>
+            <Button type='submit' variant='contained' sx = {{width:'60vw'}}>Sign up</Button>
           </Box>
         </Box>
       </Box>
       <Box component = {Paper} elevation = {3} sx = {{             
       display:'flex',
-      // justifyContent: 'flex-start',
+      justifyContent: 'center',
       paddingLeft: 4,
-      paddingRight: 12,
+      paddingRight: 4,
       paddingBottom: 2,
       paddingTop: 2,
       marginTop: 4,
@@ -112,7 +112,7 @@ function SignupPage() {
       }}>
       <>
        <Box sx = {{display:'flex'}}>
-         <span>Already have an account? </span> 
+         <Box component = "p" sx = {{display:'flex', margin: 'auto'}}>Already have an account? </Box> 
          <Box component = {Link} to ='/login' sx = {{display: 'flex', textDecoration:'none', marginLeft: 0.5}}>Log in</Box>
        </Box>
        </>

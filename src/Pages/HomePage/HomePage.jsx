@@ -35,13 +35,13 @@ function HomePage({children}) {
             paddingRight: 9,
             paddingTop: 2,
             height: '100vh',
-            marginTop: 8
+            marginTop: '7vh'
         }}>
         {!loggedIn &&
                 <Box sx = {{
                     display: 'flex', 
                     flexDirection: 'column',
-                    height: '90vh', 
+                    height: '30vh', 
                     // paddingTop: '4vh'
                 }}>
                     <Box component = "h3" sx = {{}}>Find sustainable restaurants and brands in Lisbon</Box>

@@ -22,7 +22,7 @@ function ProfilePage({children}) {
     paddingRight: 9,
     paddingTop: 2,
     height: '100vh',
-    marginTop: 8,
+    marginTop: '7vh',
     }}>
             <Box component="h3" sx = {{marginBottom: 2, marginTop: 0}}>
                 Personal Information
@@ -30,7 +30,7 @@ function ProfilePage({children}) {
             <Box 
                 component="form"
                 sx={{
-                    '& .MuiTextField-root': { maringTop: 2, marginBottom: 2, width: '35ch'}
+                    '& .MuiTextField-root': { maringTop: 2, marginBottom: 2, width: '60vw'}
 
                 }}
                 noValidate

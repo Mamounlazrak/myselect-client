@@ -81,7 +81,8 @@ function AddFormRestaurant(props) {
       alignItems: 'flex-start',
       paddingLeft: 9,
       paddingRight: 9,
-      marginTop: 9
+      marginTop: '9vh'
+      // marginTop: 9
       }}>
     
         <Box component="h3" sx = {{marginBottom: 1, marginTop: 0}}>
@@ -91,7 +92,7 @@ function AddFormRestaurant(props) {
             component="form"
             onSubmit={handleSubmit}
             sx={{
-                '& .MuiTextField-root': { maringTop: 2, marginBottom: 2, width: '35ch' }
+                '& .MuiTextField-root': { maringTop: 2, marginBottom: 2, width: '70vw' }
 
             }}
             noValidate

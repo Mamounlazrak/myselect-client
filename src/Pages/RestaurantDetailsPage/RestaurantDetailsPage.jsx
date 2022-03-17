@@ -76,7 +76,7 @@ function RestaurantDetailsPage({children}) {
     <Box sx={{
         paddingLeft: 9,
         paddingRight: 9,
-        marginTop: 9
+        marginTop: '8vh'
     }}>
         {restaurant && 
         <>
@@ -88,7 +88,7 @@ function RestaurantDetailsPage({children}) {
                 <Box component="h3" sx = {{marginTop: 0, marginBottom:0}}>{restaurant.name}</Box>
                 {(loggedIn && user.isAdmin) &&
                 <Box>
-                    <Button size ="small" variant="outlined" component={Link} to={`/edit/${restaurantId}`}>Edit Restaurant</Button>
+                    <Button size ="small" variant="outlined" component={Link} to={`/edit/${restaurantId}`}>Edit</Button>
                 </Box>
                 }
             </Box>
@@ -108,7 +108,9 @@ function RestaurantDetailsPage({children}) {
             <Box component="p" sx={{margin: 0, textAlign: 'left'}}>{restaurant.description}</Box>
             
             <Box component="h4" sx={{margin: 0, textAlign: 'left', marginTop: 2, marginBottom: 1}}>Map location</Box>
-            <Map marker = {restaurant.locationGPS.coordinates}></Map>
+            
+            <Box sx = {{width: '60vw'}} component={Map} marker = {restaurant.locationGPS.coordinates}></Box>
+ 
 
 
         {(loggedIn && !user.isAdmin) &&
