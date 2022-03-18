@@ -12,7 +12,7 @@ import axios from 'axios';
 
 function HomePage({children}) {
 
-    const [restaurantOfTheWeek, setRestaurantOfTheWeek] = useState([]);
+    const [restaurantOfTheWeek, setRestaurantOfTheWeek] = useState(null);
 
     const getRestaurantOfTheWeek = () => {
         axios.get(`${process.env.REACT_APP_API_URL}/api/restaurant-of-the-week`)
@@ -68,17 +68,10 @@ function HomePage({children}) {
 
             <Box sx = {{marginTop: 0, paddingTop: 0}}>
                {(loggedIn && restaurantOfTheWeek) && 
-               <>
-               {restaurantOfTheWeek.map((restaurant) => {
-                return (
-                    <div key={restaurant._id}>
-                        <RestaurantCard restaurant={restaurant}></RestaurantCard>
-                    </div>
-                    );
-               })}
-               {/* <RestaurantCard restaurant={restaurantOfTheWeek}></RestaurantCard> */}
-               </>
-               }
+ 
+               <RestaurantCard restaurant={restaurantOfTheWeek}></RestaurantCard>}
+
+               
             </Box>
         </Box>
     </>
