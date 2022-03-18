@@ -12,7 +12,7 @@ import axios from 'axios';
 
 function HomePage({children}) {
 
-    const [restaurantOfTheWeek, setRestaurantOfTheWeek] = useState(null);
+    const [restaurantOfTheWeek, setRestaurantOfTheWeek] = useState([]);
 
     const getRestaurantOfTheWeek = () => {
         axios.get(`${process.env.REACT_APP_API_URL}/api/restaurant-of-the-week`)
@@ -57,17 +57,28 @@ function HomePage({children}) {
                 justifyContent:'space-between',
                 alignItems: 'center'
             }}>
-                {(restaurantOfTheWeek && loggedIn) && <Box component="h3" sx = {{textAlign: 'left', marginBottom: '0', marginTop: '0'}}>Restaurant of the week</Box>}
+                {(restaurantOfTheWeek && loggedIn) && <Box component="h3" sx = {{textAlign: 'left', marginBottom: '0', marginTop: '0'}}>Restaurants of the week</Box>}
                 {(restaurantOfTheWeek && loggedIn && user.isAdmin) && <>
-                <Box>
+                {/* <Box>
                     <Button size ="small" variant="outlined" component={Link} to={`/edit/${restaurantOfTheWeek._id}`}>Edit</Button>
-                </Box>
+                </Box> */}
                 </>
                 }
             </Box>
 
             <Box sx = {{marginTop: 0, paddingTop: 0}}>
-               {restaurantOfTheWeek && <RestaurantCard restaurant={restaurantOfTheWeek}></RestaurantCard>}
+               {(loggedIn && restaurantOfTheWeek) && 
+               <>
+               {restaurantOfTheWeek.map((restaurant) => {
+                return (
+                    <div key={restaurant._id}>
+                        <RestaurantCard restaurant={restaurant}></RestaurantCard>
+                    </div>
+                    );
+               })}
+               {/* <RestaurantCard restaurant={restaurantOfTheWeek}></RestaurantCard> */}
+               </>
+               }
             </Box>
         </Box>
     </>
