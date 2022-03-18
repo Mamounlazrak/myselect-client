@@ -106,10 +106,10 @@ function RestaurantDetailsPage({children}) {
             />
             <Box component="h4" sx={{margin: 0, textAlign: 'left'}}>About</Box>
             <Box component="p" sx={{margin: 0, textAlign: 'left'}}>{restaurant.description}</Box>
-            
+{/*             
             <Box component="h4" sx={{margin: 0, textAlign: 'left', marginTop: 2, marginBottom: 1}}>Map location</Box>
             
-            <Box sx = {{width: '60vw'}} component={Map} marker = {restaurant.locationGPS.coordinates}></Box>
+            <Box sx = {{width: '60vw'}} component={Map} marker = {restaurant.locationGPS.coordinates}></Box> */}
  
 
 
