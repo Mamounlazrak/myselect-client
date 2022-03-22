@@ -19,12 +19,13 @@ Big scale recommandation/reservation platforms like Trip Advisor or The Fork don
 
 ## How to get started as a restaurant goer? 
 
-Sign up and start using the app.
+Go to https://myselect.netlify.app/, sign up and start using the app.
 
 ## How to get started as a restaurant owner? 
 
-email address: admin@test.com
-password: 12345678
+Go to https://myselect.netlify.app/ and sign in using the following credentials: 
+- email address: admin@test.com
+- password: 12345678
 
 --> You will have access to the Admin View
 
