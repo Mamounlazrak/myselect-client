@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# myselect - Full stack web application (MERN stack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Elevator Pitch
 
-## Available Scripts
+### What is the project about? 
 
-In the project directory, you can run:
+Find the best eco-friendly restaurants in Lisbon
 
-### `npm start`
+### How does it work? 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Discover a curated list of organic restaurants. Pick your favourite places and save them in your personal list 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Why did I choose to work on this project? 
 
-### `npm test`
+Among restaurant goers, a growing segment is represented by customers seeking for eco-friendly places. 
+Big scale recommandation/reservation platforms like Trip Advisor or The Fork don't focus on that niche especially, this is where I perceived an unbundling opportunity. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Get started
 
-### `npm run build`
+## How to get started as a restaurant goer? 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Sign up and start using the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to get started as a restaurant owner? 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+email address: admin@test.com
+password: 12345678
 
-### `npm run eject`
+### Feedback & improvements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please feel free to share your thoughts and feedback by sending me an email at mamounlazrak@gmail.com, I would love to meet you and have a chat! 
