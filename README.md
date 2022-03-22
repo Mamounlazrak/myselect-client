@@ -1,4 +1,4 @@
-# myselect - Full stack web application (MERN stack, responsive design)
+# myselect - Full stack web application (MERN stack)
 
 ## Project Elevator Pitch
 
