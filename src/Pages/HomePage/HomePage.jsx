@@ -41,8 +41,6 @@ function HomePage({children}) {
                     display: 'flex', 
                     flexDirection: 'column',
                     height: '90vh', 
-                    // backgroundImage: `url(${'https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg'})`
-                    // paddingTop: '4vh'
                 }}>
                     <Box component = "h3" sx = {{width: '100%', fontSize:40}}>Find the best eco-friendly restaurants in Lisbon</Box>
                     <Box component = "p" sx = {{fontSize: 20, marginTop: 0, width: "100%"}}>Discover a curated list of organic and eco-friendly restaurants in Lisbon.</Box>
