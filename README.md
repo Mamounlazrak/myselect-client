@@ -4,15 +4,15 @@
 
 ### What is the project about? 
 
-Find the best eco-friendly restaurants in Lisbon
+Find the best eco-friendly restaurants in Lisbon.
 
 ### How does it work? 
 
-Discover a curated list of organic restaurants. Pick your favourite places and save them in your personal list 
+Discover a curated list of organic restaurants. Pick your favourite places and save them in your personal list.
 
 ### Why did I choose to work on this project? 
 
-Among restaurant goers, a growing segment is represented by customers seeking for eco-friendly places. 
+Among restaurant goers, a growing segment is represented by customers seeking eco-friendly places. 
 Big scale recommandation/reservation platforms like Trip Advisor or The Fork don't focus on that niche especially, this is where I perceived an unbundling opportunity. 
 
 ### Get started
@@ -25,6 +25,8 @@ Sign up and start using the app.
 
 email address: admin@test.com
 password: 12345678
+
+--> You will have access to the Admin View
 
 ### Feedback & improvements
 
